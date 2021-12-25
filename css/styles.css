@@ -1,0 +1,146 @@
+*{box-sizing: border-box;}
+
+
+/********** GENERAL SELECTOR **********/
+
+footer{
+    background-color: #e5e5e5;
+    border-top: solid 2px rgb(202, 202, 202);
+}
+
+h1{
+    color: #ed786a;
+    margin: 100px auto 160px;
+    font-family: 'EB Garamond', serif;
+    font-size: 5rem;
+}
+
+@media all and (max-width:515px) {
+    
+    h1{
+        font-size: 3rem;
+    }
+}
+
+img{
+    border: solid 4px lightgrey;
+}
+
+ul{
+    list-style: none;
+}
+
+.link{
+    color: #888;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #ed786a;
+}
+
+.item{
+    padding: 8px;
+}
+
+/********** CLASS SELECTOR **********/
+
+/***** MAIN *****/
+
+.img-full{
+    display: block;
+    width: 100%;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.black-filter{
+    background-color: black;
+    opacity: 50%;
+    box-sizing:border-box;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    position: absolute;
+}
+
+.icon-container{
+    background-color: #878787;
+    color: white;
+    float: left;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+.zoom{
+    transition: ease 400ms all;
+}
+
+.zoom:hover{
+    transform: scale(1.25);
+}
+
+/***** FOOTER *****/
+
+.message-box{
+    height: 150px;
+}
+
+/*********************/
+/* BOOTSTRAP CHANGES */
+/*********************/
+
+.btn-primary {
+    color: #fff;
+    background-color: #ed786a;
+    border-color: #e47265;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d6665a;
+    border-color: #cc6155;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #d6665a;
+    border-color: #cc6155;
+    box-shadow: 0 0 0 0.25rem rgba(253, 90, 49, 0.527);
+  }
+  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0a58ca;
+    border-color: #0a53be;
+  }
+  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  }
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.nav-link{
+
+}
+/*********/
+/* FIXES */
+/*********/
+
+
+/* Comme la navbar a été copié depuis le site de Bootstrap, ce changement est nécessaire afin que la nav soit en space-evenly */
+.navbar-nav, .mr-auto {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    }
